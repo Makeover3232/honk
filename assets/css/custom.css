@@ -89,3 +89,50 @@ p {
 @media screen and (max-width: 736px) {
     h1 { font-size: 2.1875rem; }
 }
+
+/* Articles (Popups) Theme Overrides */
+#main article {
+    background-color: rgba(0, 0, 0, 0.95); /* Black background */
+    color: #f4f1de; /* Cream body text */
+    font-weight: normal; /* Regular text weight */
+}
+
+#main article h1, #main article h2, #main article h3, 
+#main article h4, #main article h5, #main article h6 {
+    color: #5a2e82; /* Purple headings */
+    font-weight: 700;
+}
+
+#main article h2.major {
+    font-size: 1.875rem;
+    border-bottom-color: #c4a457;
+}
+
+#main article strong, #main article b {
+    color: #9e1b1b; /* Crest red subheadings */
+    font-weight: 700;
+}
+
+#main article#reception h3 {
+    color: #9e1b1b; /* Red subheading for Puss & Mew */
+    font-size: 1.6rem;
+    margin-bottom: 0.25rem;
+}
+
+#main article#reception p:first-of-type {
+    font-size: 1.36rem;
+}
+
+/* Update close button 'X' graphic */
+#main article .close:before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23f4f1de%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+}
+#main article .close:hover:before {
+    background-color: rgba(244, 241, 222, 0.1); /* Subtle cream circle on hover */
+}
+
+@media screen and (max-width: 736px) {
+    #main article h2.major {
+        font-size: 1.5625rem;
+    }
+}
